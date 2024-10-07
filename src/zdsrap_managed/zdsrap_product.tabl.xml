@@ -33,8 +33,10 @@
     </DD03P>
     <DD03P>
      <FIELDNAME>MATNR</FIELDNAME>
+     <KEYFLAG>X</KEYFLAG>
      <ROLLNAME>MATNR</ROLLNAME>
      <ADMINFIELD>0</ADMINFIELD>
+     <NOTNULL>X</NOTNULL>
      <SHLPORIGIN>D</SHLPORIGIN>
      <COMPTYPE>E</COMPTYPE>
     </DD03P>
@@ -48,6 +50,12 @@
      <MASK>  CHAR</MASK>
     </DD03P>
    </DD03P_TABLE>
+   <TABL_EXTRAS>
+    <TDDAT>
+     <TABNAME>ZDSRAP_PRODUCT</TABNAME>
+     <CCLASS>CUS_DEV_SUP_DA</CCLASS>
+    </TDDAT>
+   </TABL_EXTRAS>
   </asx:values>
  </asx:abap>
 </abapGit>
