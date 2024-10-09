@@ -11,5 +11,6 @@ define view entity ZI_DSRAP_PRODUCT
   as select from zdsrap_product
 {
   key matnr       as Matnr,
+  key language    as language,
       description as Description
 }
