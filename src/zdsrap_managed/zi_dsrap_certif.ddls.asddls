@@ -11,7 +11,7 @@ define view entity ZI_DSRAP_CERTIF
   as select from zdsrap_certif
 {
   key cert_uuid          as CertUuid,
-      matnr              as Matnr,
+      matnr              as matnr,
       version            as Version,
       cert_status        as CertStatus,
       cert_ce            as CertCe,

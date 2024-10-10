@@ -12,7 +12,7 @@ define view entity ZI_DSRAP_CERTIF_ST
 {
   key state_uuid            as StateUuid,
       cert_uuid             as CertUuid,
-      matnr                 as Matnr,
+      matnr                 as matnr,
       version               as Version,
       status                as Status,
       status_old            as StatusOld,
