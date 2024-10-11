@@ -12,38 +12,38 @@
 annotate entity ZC_DSRAP_CERTIFPRODUCT with
 {
 
-  @UI.facet: [{
+  @UI.facet: [
+  {
     purpose: #HEADER,
     type: #FIELDGROUP_REFERENCE,
     importance: #HIGH,
     position: 1,
     label: 'Informações Técnicas',
-    targetQualifier: 'HeaderData' },
+    targetQualifier: 'HeaderData' 
+  },
 
-    {id: 'Certificate',
+  {  id: 'Certificate',
      purpose: #STANDARD,
      type: #IDENTIFICATION_REFERENCE,
      label: 'Gerenciamento do Certificado',
-     position: 10 },
+     position: 10 
+  },
      
-     {purpose: #STANDARD,
+  {  purpose: #STANDARD,
      type: #FIELDGROUP_REFERENCE,
      importance: #HIGH,
      position: 20,
      targetQualifier: 'Detail',
      label: 'Detalhes'
-     },
+  },
 
-     {id: 'CertificateState',
-      purpose: #STANDARD,
-      type: #LINEITEM_REFERENCE,
-      label: 'Modificações de Status',
-      position: 30,
-      targetElement: '_Stats'
-
-      }
-      ]
-
+  {  id: 'CertificateState',
+     purpose: #STANDARD,
+     type: #LINEITEM_REFERENCE,
+     label: 'Modificações de Status',
+     position: 30,
+     targetElement: '_Stats'
+   }]
 
   @UI.hidden: true
   CertUuid;
