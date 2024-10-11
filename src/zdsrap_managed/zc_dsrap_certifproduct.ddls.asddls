@@ -1,10 +1,11 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Consumption - Certificados'
 @Metadata.ignorePropagatedAnnotations: true
+@Metadata.allowExtensions: true
 define root view entity ZC_DSRAP_CERTIFPRODUCT as projection on ZI_DSRAP_CERTIFPRODUCT
 {
     key CertUuid,
-    Matnr,
+    matnr,
     Description,
     Version,
     CertStatus,
@@ -14,6 +15,7 @@ define root view entity ZC_DSRAP_CERTIFPRODUCT as projection on ZI_DSRAP_CERTIFP
     CertIso,
     CertTuev,
     LocalLastChanged,
+    Icon,
     /* Associations */
     _Prod,
     _Stats: redirected to composition child ZC_DSRAP_CERTIFSTPRODUCT
